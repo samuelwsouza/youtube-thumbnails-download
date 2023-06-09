@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600&family=Red+Hat+Display:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;500;600&family=Poppins:wght@300;400;500;600&family=Red+Hat+Display:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("https://images.wallpaperscraft.com/image/single/background_texture_dark_50347_1920x1080.jpg");
+}
+
+form {
+  background: #fff;
+  width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+form img.logo {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-left: 113px;
+  padding-bottom: 12px;
+  width: 190px;
+  height: 50px;
+}
+
+form header {
+  color: rgb(59, 113, 160);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+form .url-paste {
+  margin: 30px 0;
+}
+
+.url-paste .title {
+  font-size: 19px;
+  color: rgb(59, 113, 160);
+}
+
+.url-paste .input-value {
+  height: 50px;
+  width: 100%;
+  margin-top: 7px;
+  position: relative;
+}
+
+.url-paste .input-value input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: #f1f1f7;
+  padding: 0 15px;
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+.url-paste .input-value .separation {
+  height: 2px;
+  width: 100%;
+  background: rgb(59, 113, 160);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+
+.url-paste .input-value input:focus ~ .separation,
+.url-paste .input-value input:valid ~ .separation {
+  transform: scale(1);
+}
+
+form .preview-area {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 2px dashed rgb(59, 113, 160);
+}
+
+.preview-area.active {
+  border: none;
+}
+
+.preview-area .image {
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+
+.preview-area.active .image {
+  display: block;
+}
+
+.preview-area .icon {
+  color: rgb(59, 113, 160);
+  font-size: 80px;
+}
+
+.preview-area span {
+  color: rgb(59, 113, 160);
+  margin-top: 10px;
+}
+
+.preview-area.active .icon,
+.preview-area.active span {
+  display: none;
+}
+
+form .download-btn {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 30px 0 20px 0;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 10px;
+  background: #1565c0;
+  font-weight: 500;
+  color: #fff;
+}
+
+form .download-btn:hover {
+  color: #ccc;
+  background: #1976d2;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 90%;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px;
+  color: #fff;
+}
+
+footer span {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+footer span a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+footer span a:hover {
+  color: rgb(59, 113, 160);
+}
